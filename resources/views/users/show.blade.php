@@ -33,7 +33,7 @@
                 <p class="card-text">{!! nl2br($post->content) !!}</p>
 
                 <div style="text-align: center">
-                    <img src="{{ asset('storage/image/'.$post->image) }}" class="rounded">
+                    <img src="{{ asset('storage/image/'.$post->image) }}" class="rounded img-fluid">
                 </div>
                 <hr>
 
