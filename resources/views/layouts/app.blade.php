@@ -150,8 +150,22 @@
                                             <a type="button" class="btn btn-link font-weight-bold" href="{{ url('/users/2') }}">管理人(リターン計画）の雑記</a>
                                         </div>                                    
                                     </li>
-                                    <li class="list-group-item">ユーザー登録しないとログインできません。</li>
-                                    <li class="list-group-item">ログインしないと投稿やコメントは書き込めません。</li>
+                                    <li class="list-group-item">
+                                        <div class="home_button row justify-content-center">
+                                            <a href="{{ route('login') }}" class="btn btn-primary">ログイン</a>
+                                        </div>
+                                        <hr>
+                                        ログインしないと投稿やコメントは書き込めません。                                        
+                                    </li>
+                                    @if (Route::has('register'))
+                                        <li class="list-group-item">
+                                            <div class="home_button row justify-content-center">
+                                                <a href="{{ route('register') }}" class="btn btn-primary">ユーザー登録</a>
+                                            </div>
+                                            <hr>
+                                            ユーザー登録しないとログインできません。
+                                        </li>
+                                    @endif
                                 @else
                                     <li class="list-group-item">
                                         <div class="home_button row justify-content-center">
