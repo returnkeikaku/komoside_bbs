@@ -174,8 +174,7 @@
                                         <div class="home_button row justify-content-center">
                                             <a href="{{ route('login') }}" class="btn btn-primary">ログイン</a>
                                         </div>
-                                        <hr>
-                                        ログインしないと投稿やコメントは書き込めません。                                        
+                                        <hr>                                        
                                     </li>
                                 @else
                                     <li class="list-group-item">
